@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanceSpace</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+    <img src="images/logo-transparent-png.png" alt="FinanceSpace Logo">
+    </div>
+    <div class="header-text">
+    <h1>Finance Space</h1>
+    </div>
+    <div id='spacer'></div>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="openTab(event, 'home')">Home</a></li>
+        <li><a href="#features" onclick="openTab(event, 'features')">Features</a></li>
+        <li><a href="#contact" onclick="openTab(event, 'contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="home" class="tab-content">
+    <section id="hero">
+      <h1>Organize Your Finances Seamlessly</h1>
+      <p>Track your income, expenses, and budget all in one place.</p>
+      <button onclick="getStarted()">Get Started</button>
+    </section>
+  </div>
+
+  <div id="features" class="tab-content" style="display:none;">
+    <section>
+      <h2>Features</h2>
+      <div class="feature">
+        <h3>Income and Expense Tracking</h3>
+        <p>Track all your incomes and expenses easily.</p>
+      </div>
+      <div class="feature">
+        <h3>Budget Management</h3>
+        <p>Set and manage your budget goals effectively.</p>
+      </div>
+      <div class="feature">
+        <h3>Basic Reporting</h3>
+        <p>Generate reports to see your financial progress.</p>
+      </div>
+      <div class="feature">
+        <h3>User-Friendly Onboarding</h3>
+        <p>Get started with our easy-to-follow onboarding process.</p>
+      </div>
+    </section>
+  </div>
+
+  <div id="contact" class="tab-content" style="display:none;">
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 FinanceSpace. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
